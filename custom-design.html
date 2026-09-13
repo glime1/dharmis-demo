@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Custom Design | Dharmi's Boutique</title><link rel="stylesheet" href="style.css"></head>
-<body><header class="site-header"><a class="brand" href="index.html"><span>Dharmi's</span><small>BOUTIQUE</small></a><nav class="nav"><a href="index.html">Home</a><a href="lookbook.html">Lookbook</a><a href="quiz.html">Style Finder</a></nav></header>
+<body><header class="site-header"><a class="brand" href="index.html"><span>Dharmi's</span><small>BOUTIQUE</small></a>
+<button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav class="nav"><a href="index.html">Home</a><a href="index.html#collection">Collection</a><a href="custom-design.html">Custom Design</a><a href="lookbook.html">Lookbook</a><a href="quiz.html">Style Finder</a><a class="nav-cta" href="https://wa.me/917567504456" target="_blank" rel="noopener">WhatsApp</a></nav></header>
 <main class="section"><div class="quiz-wrap"><p class="eyebrow">CREATE YOUR LOOK</p><h1 style="font:500 clamp(45px,6vw,75px) 'Playfair Display';margin:0 0 20px">Tell us what you're <em>imagining.</em></h1><p style="line-height:1.7;margin-bottom:40px">Share a few details and start a conversation about your custom outfit.</p>
-<div class="quiz-card"><div class="form-grid">
-<input class="input" id="name" placeholder="Your name"><input class="input" id="occasion" placeholder="Occasion">
+<div class="quiz-card"><div class="form-grid"><input class="input" id="name" placeholder="Your name"><input class="input" id="occasion" placeholder="Occasion">
 <select class="input" id="outfit"><option value="">Outfit type</option><option>Lehenga</option><option>Blouse</option><option>Three-piece outfit</option><option>Western outfit</option><option>Other</option></select>
-<input class="input" id="date" placeholder="When do you need it?">
-<textarea class="input full" id="details" placeholder="Tell us about your preferred colour, style, fitting, or anything else..."></textarea>
+<input class="input" id="date" placeholder="When do you need it?"><textarea class="input full" id="details" placeholder="Tell us about your preferred colour, style, fitting, or anything else..."></textarea>
 <button class="btn primary full" id="send">Send Enquiry on WhatsApp</button></div></div></div></main>
 <footer><div class="brand"><span>Dharmi's</span><small>BOUTIQUE</small></div><p>Demo website created by GLIME</p></footer>
-<script>
-document.getElementById('send').onclick=()=>{
- const n=document.getElementById('name').value,o=document.getElementById('occasion').value,t=document.getElementById('outfit').value,d=document.getElementById('date').value,x=document.getElementById('details').value;
- const msg=`Hi Dharmi's Boutique, I would like to discuss a custom outfit.%0A%0AName: ${n}%0AOccasion: ${o}%0AOutfit: ${t}%0ANeed by: ${d}%0ADetails: ${x}`;
- window.open('https://wa.me/917567504456?text='+msg,'_blank');
-};
+<script src="script.js"></script><script>
+document.getElementById('send').onclick=()=>{const n=document.getElementById('name').value,o=document.getElementById('occasion').value,t=document.getElementById('outfit').value,d=document.getElementById('date').value,x=document.getElementById('details').value;
+const msg=`Hi Dharmi's Boutique, I would like to discuss a custom outfit.\n\nName: ${n}\nOccasion: ${o}\nOutfit: ${t}\nNeed by: ${d}\nDetails: ${x}`;
+window.open('https://wa.me/917567504456?text='+encodeURIComponent(msg),'_blank');};
 </script></body></html>

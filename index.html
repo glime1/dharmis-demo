@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dharmi's Boutique — designer fashion, custom outfits and personalised styling in Surat.">
-  <title>Dharmi's Boutique | Your Style. Your Design.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dharmi's Boutique — designer fashion, custom outfits and personalised styling in Surat.">
+<title>Dharmi's Boutique | Your Style. Your Design.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="index.html"><span>Dharmi's</span><small>BOUTIQUE</small></a>
-  <button class="menu-btn" aria-label="Open menu">☰</button>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
   <nav class="nav">
-    <a href="#collection">Collection</a>
+    <a href="index.html">Home</a>
+    <a href="index.html#collection">Collection</a>
     <a href="custom-design.html">Custom Design</a>
     <a href="lookbook.html">Lookbook</a>
     <a href="quiz.html">Style Finder</a>
@@ -24,22 +25,20 @@
 </header>
 
 <main>
-<section class="hero">
+<section class="hero premium-hero">
   <div class="hero-copy">
     <p class="eyebrow">FASHION DESIGNER · SURAT</p>
-    <h1>Your Style.<br><em>Your Design.</em><br>Made for You.</h1>
-    <p class="hero-text">Wear the clothes you love and let us make them for you — from the first idea to the perfect fit.</p>
+    <h1>Wear your<br><em>story.</em><br>Make it yours.</h1>
+    <p class="hero-text">Custom-designed outfits, thoughtful details and a fit created around you.</p>
     <div class="hero-actions">
       <a class="btn primary" href="custom-design.html">Create Your Look</a>
       <a class="btn secondary" href="lookbook.html">Explore Lookbook</a>
     </div>
-    <div class="trust"><strong>4.9 ★</strong><span>88 Google reviews</span><span>·</span><span>Custom designs & fitting</span></div>
+    <div class="trust"><strong>4.9 ★</strong><span>88 Google reviews</span><span>·</span><span>Custom design & fitting</span></div>
   </div>
   <div class="hero-art">
-    <div class="hero-card">
-      <div class="image-placeholder">DHARMI'S<br><small>DESIGNER STUDIO</small></div>
-      <div class="floating-note">Made around <b>you.</b></div>
-    </div>
+    <div class="hero-image"><img src="hero.jpg" alt="Dharmi's Boutique designer outfit"></div>
+    <div class="floating-note">Designed around <b>you.</b></div>
   </div>
 </section>
 
@@ -47,7 +46,7 @@
   <p class="eyebrow">THE DHARMI'S APPROACH</p>
   <h2>Not just an outfit.<br><em>A look made for you.</em></h2>
   <div class="intro-grid">
-    <p>From statement occasion wear to personalised custom outfits, Dharmi's Boutique focuses on design, detail and fit — so your outfit feels as special as the moment.</p>
+    <p>From statement occasion wear to personalised custom outfits, Dharmi's Boutique brings together design, detail and fitting — so your outfit feels as special as the moment.</p>
     <div class="feature-list">
       <div><b>01</b><span>Personalised design</span></div>
       <div><b>02</b><span>Thoughtful fitting</span></div>
@@ -62,27 +61,34 @@
     <a href="lookbook.html" class="text-link">View lookbook →</a>
   </div>
   <div class="collection-grid">
-    <article class="collection-card card-one"><div><span>01</span><h3>Lehengas</h3><p>Statement silhouettes for celebrations.</p></div></article>
-    <article class="collection-card card-two"><div><span>02</span><h3>Custom Blouses</h3><p>Designed around your fit and style.</p></div></article>
-    <article class="collection-card card-three"><div><span>03</span><h3>Designer Outfits</h3><p>Personalised looks for every occasion.</p></div></article>
+    <a class="collection-card" href="lookbook.html"><img src="lehenga-display.jpg" alt="Hand embroidered lehenga"><div><span>01</span><h3>Lehengas</h3><p>Statement silhouettes for celebrations.</p></div></a>
+    <a class="collection-card" href="lookbook.html"><img src="blouse-maroon.jpg" alt="Embroidered blouse"><div><span>02</span><h3>Custom Blouses</h3><p>Intricate details, designed around your fit.</p></div></a>
+    <a class="collection-card" href="lookbook.html"><img src="navratri-blue.jpg" alt="Designer festive outfit"><div><span>03</span><h3>Designer Looks</h3><p>Personalised outfits for every occasion.</p></div></a>
+  </div>
+</section>
+
+<section class="editorial section">
+  <div class="editorial-copy"><p class="eyebrow">MADE TO BE YOURS</p><h2>From an idea<br>to a <em>signature look.</em></h2><p>Tell us the occasion, silhouette and mood. We'll turn your vision into a look worth remembering.</p><a class="btn primary" href="custom-design.html">Start a Custom Enquiry</a></div>
+  <div class="editorial-image"><img src="tribal.jpg" alt="Tribal mirror-work designer outfit"><span>DETAIL · CRAFT · CHARACTER</span></div>
+</section>
+
+<section class="gallery-strip section">
+  <div class="section-head"><div><p class="eyebrow">A GLIMPSE</p><h2>Designed to be noticed.</h2></div><a href="lookbook.html" class="text-link">See more →</a></div>
+  <div class="gallery-grid">
+    <img src="red.jpg" alt="Red festive designer outfit">
+    <img src="whitegold.jpg" alt="White and gold designer outfit">
+    <img src="custom-dress.jpg" alt="Custom dress design">
+    <img src="blackwhite.jpg" alt="Black and white festive outfit">
   </div>
 </section>
 
 <section class="finder section">
-  <div>
-    <p class="eyebrow">NOT SURE WHAT TO WEAR?</p>
-    <h2>Find a look that<br><em>feels like you.</em></h2>
-    <p>Answer a few quick questions and get a personalised style direction you can take straight to Dharmi's Boutique.</p>
-    <a class="btn primary" href="quiz.html">Try Style Finder</a>
-  </div>
+  <div><p class="eyebrow">NOT SURE WHAT TO WEAR?</p><h2>Find a look that<br><em>feels like you.</em></h2><p>Choose your occasion, silhouette and mood to get a personalised style direction.</p><a class="btn primary" href="quiz.html">Try Style Finder</a></div>
   <div class="finder-box"><span>STYLE FINDER</span><strong>Occasion × Silhouette × Mood</strong><small>Quick · Personal · Easy to enquire</small></div>
 </section>
 
 <section class="reviews section">
-  <div class="section-head">
-    <div><p class="eyebrow">CLIENT LOVE</p><h2>What people notice</h2></div>
-    <div class="rating">4.9 <span>★</span></div>
-  </div>
+  <div class="section-head"><div><p class="eyebrow">CLIENT LOVE</p><h2>What people notice</h2></div><div class="rating">4.9 <span>★</span></div></div>
   <div class="review-grid">
     <div class="review"><span>★★★★★</span><p>Beautiful designer collection and very good fitting.</p><small>Google review theme · Demo</small></div>
     <div class="review"><span>★★★★★</span><p>Helpful management with a good understanding of clients' needs.</p><small>Google review theme · Demo</small></div>
@@ -91,13 +97,9 @@
 </section>
 
 <section class="location section">
-  <div><p class="eyebrow">VISIT THE STUDIO</p><h2>Dharmi's Boutique</h2>
-    <p>G 35 Westfield, Ghod Dod Rd,<br>Opp. St. Xavier's School, Adarsh Society,<br>Athwa, Surat, Gujarat</p>
-    <div class="hero-actions"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Dharmi%27s%20Boutique%20G%2035%20Westfield%20Ghod%20Dod%20Road%20Surat" target="_blank" rel="noopener">Get Directions</a><a class="btn secondary" href="https://wa.me/917567504456" target="_blank" rel="noopener">WhatsApp Enquiry</a></div>
-  </div>
+  <div><p class="eyebrow">VISIT THE STUDIO</p><h2>Dharmi's Boutique</h2><p>G 35 Westfield, Ghod Dod Rd,<br>Opp. St. Xavier's School, Adarsh Society,<br>Athwa, Surat, Gujarat</p><div class="hero-actions"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Dharmi%27s%20Boutique%20G%2035%20Westfield%20Ghod%20Dod%20Road%20Surat" target="_blank" rel="noopener">Get Directions</a><a class="btn secondary" href="https://wa.me/917567504456" target="_blank" rel="noopener">WhatsApp Enquiry</a></div></div>
 </section>
 </main>
-
 <footer><div class="brand"><span>Dharmi's</span><small>BOUTIQUE</small></div><p>Designer fashion · Custom made · Surat</p><p>Demo website created by GLIME</p></footer>
 <script src="script.js"></script>
 </body>
